@@ -1,0 +1,19 @@
+/* src/css/Summary.css */
+.summary {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .summary-item {
+    background-color: #F0F4FF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+  

@@ -1,0 +1,41 @@
+/* src/css/Sidebar.css */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #0A2463;
+    transition: width 0.3s;
+    overflow-x: hidden;
+  }
+  
+  .sidebar:hover {
+    width: 200px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #ECF1FD;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  
+  .text {
+    display: none;
+  }
+  
+  .sidebar:hover .text {
+    display: inline;
+  }
+  
+  .menu-item:hover {
+    background-color: #153F93;
+  }
+  

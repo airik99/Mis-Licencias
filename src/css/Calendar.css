@@ -1,0 +1,88 @@
+/* src/css/Calendar.css */
+.calendar {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-navigation button {
+    background-color: #0E56E7;
+    color: #ECF1FD;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 15px;
+    cursor: pointer;
+  }
+  
+  .calendar-navigation button:hover {
+    background-color: #153F93;
+  }
+  
+  .calendar-navigation span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .month {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .month th, .month td {
+    padding: 15px; /* Ajusta el alto de las celdas */
+    border: 1px solid #ddd;
+    vertical-align: top; /* Alinea el texto al top */
+    height: 30px;
+  }
+  
+  .month th {
+    background-color: #F0F4FF;
+    color: #0A2463;
+  }
+  
+  .month td {
+    background-color: #FFFFFF;
+    color: #2A2A2A;
+  }
+  
+  .month .noday {
+    background-color: #F0F0F0;
+  }
+  
+  .month td::after {
+    content: ""; /* Espacio adicional para contenido extra */
+    display: block;
+    height: 20px; /* Espacio adicional debajo del número del día */
+  }
+  
+  .month td.event {
+    background-color: #E3F2FD; /* Color de fondo para días con eventos */
+  }
+  
+  .month td.event::after {
+    content: attr(data-event); /* Muestra el texto del evento */
+    display: block;
+    font-size: 12px;
+    color: #0A2463;
+    padding-top: 5px;
+  }
+  
+  /* Cambia el color de fondo al hacer hover sobre el número del día */
+.month td:hover {
+    background-color: #E3F2FD; /* Color de fondo para el hover, ajusta según tu preferencia */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+  }
+  
+  /* Cambia el color del texto al hacer hover */
+  .month td:hover {
+    color: #0A2463; /* Color del texto al hacer hover, ajusta según tu preferencia */
+  }

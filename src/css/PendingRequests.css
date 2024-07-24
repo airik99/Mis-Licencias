@@ -1,0 +1,22 @@
+/* src/css/PendingRequests.css */
+.pending-requests {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .pending-requests h2 {
+    margin-top: 0;
+  }
+  
+  .pending-requests ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pending-requests li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  

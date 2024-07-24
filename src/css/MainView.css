@@ -1,0 +1,19 @@
+/* src/css/MainView.css */
+
+.main-view {
+  display: flex;
+  margin-left: 60px; /* Espacio para el Sidebar */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #F0F4FF;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto; /* Permite el desplazamiento si el contenido es muy largo */
+}
+
+  
+  

@@ -1,0 +1,33 @@
+/* src/css/Header.css */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #0A2463;
+    color: #ECF1FD;
+    padding: 10px 20px;
+  }
+  
+  .notifications {
+    margin-right: 20px;
+    font-size: 24px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #494949;
+    color: #ECF1FD;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
