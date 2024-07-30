@@ -1,14 +1,25 @@
-// src/App.js
-import React from 'react';
-import './css/App.css'; // Importa los estilos globales
-import MainView from './components/MainView'; // Importa el componente MainView
+import React, { useState } from 'react';
+import './css/App.css';
+import MainView from './views/MainView';
+import Login from './views/Login';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+  };
+
   return (
     <div className="App">
-      <MainView />
+      {isAuthenticated ? (
+        <MainView />
+      ) : (
+        <Login onLogin={handleLogin} />
+      )}
     </div>
   );
 }
 
 export default App;
+

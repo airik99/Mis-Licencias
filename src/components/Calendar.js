@@ -68,7 +68,7 @@ const Calendar = () => {
             <th>Mié</th>
             <th>Jue</th>
             <th>Vie</th>
-            <th className="sat">Sáb</th>
+            <th>Sáb</th>
           </tr>
         </thead>
         <tbody>

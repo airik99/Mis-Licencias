@@ -1,43 +1,61 @@
-import React from 'react';
-import Sidebar from '../components/Sidebar';
-import Header from '../components/Header';
+// src/views/MainView.js
+import React, { useState } from 'react';
 import '../css/MainView.css';
+import Calendar from '../components/Calendar'; // Importa el componente Calendar
+import Sidebar from '../components/Sidebar';   // Importa el componente Sidebar
+import Header from '../components/Header';     // Importa el componente Header
+import Summary from '../components/Summary';   // Importa el componente Summary
+import PendingRequests from '../components/PendingRequests'; // Importa el componente PendingRequests
+
 
 const MainView = () => {
-    return (
-        <div className="main-view">
-            <Sidebar />
-            <div className="main-content">
-                <Header />
-                {/* Aquí puedes agregar el contenido principal */}
-                <section className="calendar">
-                    {/* Calendario aquí */}
-                </section>
-                <section className="summary">
-                    <div className="summary-item">
-                        <h3>Días Tomados</h3>
-                        <p>10</p>
-                    </div>
-                    <div className="summary-item">
-                        <h3>Días Disponibles</h3>
-                        <p>15</p>
-                    </div>
-                    <div className="summary-item">
-                        <h3>Solicitudes Pendientes</h3>
-                        <p>3</p>
-                    </div>
-                </section>
-                <section className="pending">
-                    <h2>Solicitudes Pendientes</h2>
-                    {/* Lista de solicitudes pendientes */}
-                </section>
-                <section className="announcements">
-                    <h2>Anuncios de la Empresa</h2>
-                    {/* Anuncios de la empresa */}
-                </section>
-            </div>
-        </div>
-    );
+  const [currentMonth, setCurrentMonth] = useState(new Date());
+
+  const handlePrevMonth = () => {
+    setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1));
+  };
+
+  const handleNextMonth = () => {
+    setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1));
+  };
+
+  const generateDays = (month) => {
+    const weeks = [];
+    const daysInMonth = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate();
+    const startDay = new Date(month.getFullYear(), month.getMonth(), 1).getDay();
+
+    let week = Array(startDay).fill(null);
+
+    for (let i = 1; i <= daysInMonth; i++) {
+      week.push(i);
+
+      if (week.length === 7) {
+        weeks.push(week);
+        week = [];
+      }
+    }
+
+    if (week.length > 0) {
+      while (week.length < 7) week.push(null);
+      weeks.push(week);
+    }
+
+    return weeks;
+  };
+
+  const days = generateDays(currentMonth);
+
+  return (
+    <div className="main-view">
+      <Sidebar />
+      <div className="main-content">
+        <Header />
+        <Calendar />
+        <Summary /> {/* Agrega el componente Summary */}
+        <PendingRequests /> {/* Agrega el componente PendingRequests */}
+      </div>
+    </div>
+  );
 };
 
 export default MainView;
