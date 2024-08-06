@@ -8,9 +8,3 @@
 - **Aprobación y Rechazo**: Los usuarios con permisos adecuados pueden aprobar o rechazar solicitudes.
 - **Calendario Interactivo**: Visualización de licencias en un calendario intuitivo.
 - **Resumen de Licencias**: Información sobre días tomados, disponibles y solicitudes pendientes.
-
-## Tecnologías
-
-- **Frontend**: React, CSS
-- **Backend**: (Especifica si usas algún backend o API)
-- **Base de Datos**: (Especifica si usas alguna base de datos)
