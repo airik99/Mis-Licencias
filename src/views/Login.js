@@ -7,7 +7,7 @@ const Login = () => {
       <div className="login-page">
         <div className="login-box">
           <h2>Iniciar Sesión</h2>
-          <form>
+          <form className="login-form">
             <div className="user-box">
               <label>Usuario</label>
               <input type="text" name="username" placeholder='Usuario/DNI' required />
@@ -16,11 +16,11 @@ const Login = () => {
               <label>Contraseña</label>
               <input type="password" name="password" placeholder='********' required />
             </div>
-            <button type="submit">Iniciar Sesión</button>
+            <button className="login-button" type="submit">Iniciar Sesión</button>
           </form>
-          <a href="#">¿Olvidó su contraseña?</a>
+          <a className="forgotpw" href="#">¿Olvidó su contraseña?</a>
         </div>
-        <footer>© 2024 Mis Licencias. Todos los derechos reservados.</footer>
+        <footer className="login-footer">© 2024 Mis Licencias. Todos los derechos reservados.</footer>
       </div>
     );
   };

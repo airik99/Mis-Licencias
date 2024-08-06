@@ -51,8 +51,8 @@ const MainView = () => {
       <div className="main-content">
         <Header />
         <Calendar />
-        <Summary /> {/* Agrega el componente Summary */}
-        <PendingRequests /> {/* Agrega el componente PendingRequests */}
+        <Summary />
+        <PendingRequests />
       </div>
     </div>
   );

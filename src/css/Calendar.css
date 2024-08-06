@@ -65,24 +65,24 @@
   }
   
   .month td.event {
-    background-color: #E3F2FD; /* Color de fondo para días con eventos */
+    background-color: #E3F2FD; 
   }
   
   .month td.event::after {
-    content: attr(data-event); /* Muestra el texto del evento */
+    content: attr(data-event); 
     display: block;
     font-size: 12px;
     color: #0A2463;
     padding-top: 5px;
   }
   
-  /* Cambia el color de fondo al hacer hover sobre el número del día */
+
 .month td:hover {
-    background-color: #E3F2FD; /* Color de fondo para el hover, ajusta según tu preferencia */
-    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+    background-color: #E3F2FD; 
+    cursor: pointer;
   }
   
-  /* Cambia el color del texto al hacer hover */
+ 
   .month td:hover {
-    color: #0A2463; /* Color del texto al hacer hover, ajusta según tu preferencia */
+    color: #0A2463; 
   }

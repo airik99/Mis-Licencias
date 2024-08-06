@@ -12,11 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      {isAuthenticated ? (
-        <MainView />
-      ) : (
-        <Login onLogin={handleLogin} />
-      )}
+      <MainView />
+      {/*isAuthenticated ? (<MainView />) : (<Login onLogin={handleLogin} />)*/}
     </div>
   );
 }
