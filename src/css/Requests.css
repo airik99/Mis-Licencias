@@ -1,0 +1,64 @@
+.request {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.all-requests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.all-requests:hover {
+    background-color: #d3d3d3;
+}
+
+.edit-button-requests {
+    background-color: #0E56E7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 16px;
+    width: 40%;
+    height: 40px;
+}
+
+.edit-button-requests:hover {
+    background-color: #153F93;
+}
+
+.state-requets-pend {
+    font-weight: bold;
+    background-color: #f5d2a5;
+    padding: 10px;
+    border-radius: 8px;
+    /*border: 1px solid #8f560d;*/
+    color: #8f560d;
+}
+
+.state-requets-acept {
+    font-weight: bold;
+    background-color: #aef7a8;
+    padding: 10px;
+    border-radius: 8px;
+    /*border: 1px solid #1a960f;*/
+    color: #177e0e;
+}
+
+.state-requets-rech {
+    font-weight: bold;
+    background-color: #f8b7b7;
+    padding: 10px;
+    border-radius: 8px;
+    /*border: 1px solid #991111;*/
+    color: #991111;
+}

@@ -17,10 +17,6 @@ const Sidebar = () => {
                 <span className="text">Perfil</span>
             </div>
             <div className="menu-item">
-                <span className="icon">⚙️</span>
-                <span className="text">Configuración</span>
-            </div>
-            <div className="menu-item">
                 <span className="icon">🛠️</span>
                 <span className="text">Soporte</span>
             </div>

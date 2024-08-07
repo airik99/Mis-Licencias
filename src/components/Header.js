@@ -35,7 +35,7 @@ const Header = () => {
                         <a href="#asd">
                             👤 Editar Perfil
                         </a>
-                        <a href="#asd">
+                        <a href="#asd"> {/*esto creo que lo voy a sacar*/}
                             🔒 Cambiar Contraseña
                         </a>
                         <a href="#asd">
